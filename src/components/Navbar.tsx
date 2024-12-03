@@ -44,7 +44,7 @@ const Navbar = () => {
   }, [navData]);
 
   return (
-    <nav className="border-2 flex justify-between w-full py-2 md:py-4 px-16 items-center font-bold fixed top-0 z-50 text-[12px]">
+    <nav className=" flex justify-between w-full py-2 md:py-4 px-16 items-center font-bold fixed top-0 z-50 text-[12px]">
       <div className="">
         <img src={LOGO} alt="Logo" className="w-12" />
       </div>

@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Parkinsans:wght@300..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-black text-white font-manrope font-light text-[14px] tracking-wide pb-12
+}
+
+.button-styles {
+  @apply uppercase relative 
+}
+  
+.div-underline {
+  @apply absolute -bottom-2 h-[1px] opacity-0 transition-all duration-700 w-[1%] bg-white
+}
+

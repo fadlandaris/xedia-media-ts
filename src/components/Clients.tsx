@@ -6,13 +6,13 @@ const Clients: React.FC = () => {
   const [clientsData] = useState(clients);
 
   return (
-    <section className='px-16 py-32' id='clients'>
-      <div className='flex justify-between items-center text-5xl font-extrabold'>
+    <section className='px-16 md:py-32 py-16' id='clients'>
+      <div className='flex justify-between items-center text-2xl md:text-5xl font-extrabold'>
         <h2>Trusted Clients</h2>
         {/* <div className='h-[2px] w-[5rem] bg-white opacity-30'/> */}
-        <h2 className='uppercase opacity-30'>xedia media</h2>
+        <h2 className='uppercase opacity-30 '>xedia media</h2>
       </div>
-      <div className='mt-32 grid grid-cols-1 gap-y-4 cursor-pointer'>
+      <div className='md:mt-32 mt-8 grid grid-cols-1 gap-y-4 cursor-pointer'>
         <Marquee autoFill={true} pauseOnHover={true}  >
         {clientsData.slice(0, 1).map((item, i) => (
           <div key={i} className='flex'>

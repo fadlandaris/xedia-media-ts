@@ -44,8 +44,8 @@ export const contact:dataProps[]= [
   },
   {
     id: 3,
-    nav: "Copy Address",
-    link: ""
+    nav: "Google Maps",
+    link: "https://maps.app.goo.gl/6FQFcmU7e8h588Tq7"
   },
 ]
 
@@ -92,87 +92,99 @@ export const servicesData: dataProps[] = [
   {
     id: 1,
     title: "Video Content Production",
-    desc: "We create impactful videos that tell your brand’s story and captivate your audience",
+    desc: "Menyajikan video kreatif yang mampu menghidupkan cerita dan pesan brand",
     link: "",
     img: "",
+    price: 1000000,
   },
   {
     id: 2,
     title: "Video Company Profile",
-    desc: "We craft compelling company profiles to showcase your brand’s mission and values",
+    desc: "Menghasilkan video profil untuk merepresentasikan nilai dan kepribadian brand",
     link: "",
     img: "",
+    price: 1000000,
   },
   {
     id: 3,
     title: "Logo Design Services",
-    desc: "We design unique logos that strengthen brand identity and recognition",
+    desc: "Menciptakan logo khas yang mencerminkan identitas unik sebuah brand",
     link: "",
     img: "",
+    price: 1000000,
   },
   {
     id: 4,
     title: "Social Media Management",
-    desc: "We grow your social media presence with engaging content and analytics",
+    desc: "Membangun strategi media sosial yang efektif untuk menjangkau lebih banyak audiens",
     link: "",
     img: "",
+    price: 1000000,
   },
   {
     id: 5,
     title: "Website Development",
-    desc: "We create user-friendly, SEO-optimized websites to convert visitors into clients",
+    desc: "Merancang website yang responsif dan mendukung konversi pengunjung menjadi pelanggan",
     link: "",
     img: "",
+    price: 1000000,
   },
   {
     id: 6,
     title: "Instagram Feed Design",
-    desc: "We design cohesive Instagram feeds to enhance your brand’s visual appeal",
+    desc: "Mengoptimalkan visual feed Instagram agar lebih menarik dan profesional",
     link: "",
     img: "",
+    price: 1000000,
   },
   {
     id: 7,
     title: "Advertising Services",
-    desc: "We deliver effective digital ad campaigns that maximize your brand’s reach",
+    desc: "Menawarkan iklan digital yang dirancang untuk memaksimalkan hasil kampanye",
     link: "",
     img: "",
+    price: 1000000,
   },
   {
     id: 8,
     title: "Online Media Publication",
-    desc: "We connect your brand with the right audience through strategic media campaigns",
+    desc: "Menghubungkan brand dengan audiens melalui publikasi di platform digital",
     link: "",
     img: "",
+    price: 1000000,
   },
   {
     id: 9,
     title: "Digital Home Creation",
-    desc: "We build engaging digital platforms to strengthen your online presence",
+    desc: "Membangun platform digital yang inovatif untuk meningkatkan eksistensi online",
     link: "",
     img: "",
+    price: 1000000,
   },
   {
     id: 10,
     title: "Marketing Administration",
-    desc: "We provide expert support to streamline your marketing operations",
+    desc: "Mengelola kebutuhan administrasi pemasaran untuk mendukung efisiensi operasional",
     link: "",
     img: "",
+    price: 1000000,
   },
 ];
+
+
 
 export const clients = [
   {
     id: 1,
-    images: [CLIENT_2, CLIENT_3, CLIENT_4, CLIENT_5,],
+    images: [CLIENT_5, CLIENT_3, CLIENT_4, CLIENT_10,],
   },
   {
     id: 2,
-    images: [CLIENT_6, CLIENT_7, CLIENT_8, CLIENT_9,],
+    images: [CLIENT_2, CLIENT_7, CLIENT_8, CLIENT_9,],
   },
   {
     id: 3,
-    images: [CLIENT_10, CLIENT_11, CLIENT_12, CLIENT_13,],
+    images: [CLIENT_6, CLIENT_11, CLIENT_12, CLIENT_13,],
   },
 ];
 

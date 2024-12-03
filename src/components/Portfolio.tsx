@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { GoArrowRight, GoArrowLeft, GoArrowDownRight } from 'react-icons/go';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
 import { dataProps } from '../types/type';
 import { HERO } from '../assets/assets';
 import 'swiper/css';
@@ -12,7 +13,7 @@ interface props {
   data: dataProps[];
 }
 
-const Portfolio: React.FC<props> = ({ data }) => { 
+const Portfolio: React.FC<props> = ({ data }) => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const swiperRef = useRef<any>(null);
 
@@ -29,15 +30,15 @@ const Portfolio: React.FC<props> = ({ data }) => {
   };
 
   return (
-    <section className='py-32' id='portfolio'>
-      <div className='flex justify-between px-16 items-center'>
-        <div className='text-5xl font-extrabold w-[35rem]'>
+    <section className='md:py-32 py-16' id='portfolio'>
+      <div className='md:flex justify-between px-16 items-center'>
+        <div className='text-2xl md:text-5xl font-extrabold w-[15rem] md:w-[35rem]'>
           <div className='flex justify-end'>
             Discover Our Brand
           </div>
           and Keep in Touch
         </div>
-        <div className='flex gap-x-16 text-5xl '>
+        <div className='mt-8 md:mt-0 flex gap-x-16 text-5xl '>
           <button className="button-styles group-hover:mr-8 group opacity-30 hover:opacity-100 transition-all duration-500" onClick={handlePrev}>
             <GoArrowLeft />
             <div className="div-underline group-hover:opacity-100 group-hover:w-[100%]" />
@@ -49,13 +50,30 @@ const Portfolio: React.FC<props> = ({ data }) => {
         </div>
       </div>
 
-      <div className='mt-32 '>
+      <div className='mt-8 md:mt-32 '>
         <Swiper
-          slidesPerView={3}
           spaceBetween={32}
           style={{ paddingLeft: '64px', paddingTop: '32px', paddingBottom: '32px', paddingRight: '64px' }}
           onSwiper={(swiper) => {
             swiperRef.current = swiper;
+          }}
+          modules={[Autoplay]}
+          autoplay={{
+            delay: 3000, 
+            disableOnInteraction: false, 
+          }}
+          loop={true} // Enable looping
+          breakpoints={{
+            // Define breakpoints for responsive behavior
+            640: {
+              slidesPerView: 1, // Mobile view
+            },
+            768: {
+              slidesPerView: 2, // Tablet view (optional)
+            },
+            1024: {
+              slidesPerView: 3, // Desktop view
+            },
           }}
         >
           {data.map((item, i) => (
@@ -67,7 +85,7 @@ const Portfolio: React.FC<props> = ({ data }) => {
                     <p className='text-2xl font-extrabold'>0{item.id}</p>
                     <p className='text-xl font-extrabold'>{item.title}</p>
                   </div>
-                  <div className='h-[0.5px] w-full bg-white mt-16 mb-32 opacity-30' />
+                  <div className='h-[0.5px] w-full bg-white mt-16 md:mb-32 mb-8 opacity-30' />
                   <div className='flex justify-end font-extrabold'>
                     <button className="button-styles group flex justify-start items-center gap-x-8 hover:gap-x-16 transition-all duration-500">
                       view Portfolio

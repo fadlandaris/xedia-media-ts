@@ -9,6 +9,7 @@ export interface dataProps {
   date?: string
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   icon?: any
+  price?: number
 }
 
 export interface newsProps {

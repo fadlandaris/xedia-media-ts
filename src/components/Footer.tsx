@@ -45,11 +45,11 @@ const Footer: React.FC<props> = ({navDatas, contactDatas, socialDatas}) => {
         </div>
       </div>
       <div className='flex flex-col w-[30rem] justify-between'>
-        <button className="button-styles group font-bold flex justify-between items-center w-full text-xl">
+        <a href="https://wa.me/6282328713200" target="_blank" className="button-styles group font-bold flex justify-between items-center w-full text-xl">
           Contact Us
           <GoArrowDownRight className='text-3xl'/>
           <div className="div-underline group-hover:opacity-100 group-hover:w-[100%]"/>
-        </button>
+        </a>
           <div className='grid grid-cols-3 gap-x-8 gap-y-8 font-bold'>
             {socialDatas.map((item, i) => (
               <a href={item.link} target='_blank' key={i} className="button-styles group flex justify-start items-center gap-x-2">

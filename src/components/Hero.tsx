@@ -32,11 +32,11 @@ const Hero: React.FC = () => {
               <h2>the Xedia Way</h2>
             </div>
             <div className='flex justify-start md:justify-center items-center font-bold text-lg md:text-xl'>
-            <button className="mt-8 md:mt-0 button-styles group flex justify-start items-center gap-x-8 hover:gap-x-16 transition-all duration-500">
+            <a href="https://wa.me/6282328713200" target="_blank" className="mt-8 md:mt-0 button-styles group flex justify-start items-center gap-x-8 hover:gap-x-16 transition-all duration-500">
               Contact Us
               <GoArrowDownRight/>
               <div className="div-underline group-hover:opacity-100 group-hover:w-[100%]"/>
-            </button>
+            </a>
             </div>
           </div>
           </div>

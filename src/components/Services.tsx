@@ -40,7 +40,7 @@ const Services: React.FC<props> = ({ data }) => {
                     <span className='line-through text-red-400'>
                       {new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(item.price ?? 0)} 
                     </span>
-                    <span className='font-extrabold text-lg ml-6 text-green-400'>
+                    <span className='font-extrabold text-xl ml-6 text-green-400'>
                       To {new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format((item.price ?? 0) * 0.7)}
                     </span>
                   </div>

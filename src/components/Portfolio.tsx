@@ -31,14 +31,14 @@ const Portfolio: React.FC<props> = ({ data }) => {
 
   return (
     <section className='md:py-32 py-16' id='portfolio'>
-      <div className='md:flex justify-between px-16 items-center'>
-        <div className='text-2xl md:text-5xl font-extrabold w-[15rem] md:w-[35rem]'>
-          <div className='flex justify-end'>
+      <div className='md:flex justify-between px-10 md:px-16 items-center'>
+        <div className='text-2xl md:text-5xl font-extrabold w-[17rem] md:w-[35rem]'>
+          <div data-aos="fade-up" data-aos-duration="1500" className='flex justify-end'>
             Discover Our Brand
           </div>
-          and Keep in Touch
+          <p data-aos="fade-up" data-aos-duration="2100">and Keep in Touch</p>
         </div>
-        <div className='mt-8 md:mt-0 flex gap-x-16 text-5xl '>
+        <div data-aos="fade-up" data-aos-duration="2100" className='mt-8 md:mt-0 flex gap-x-16 text-5xl '>
           <button className="button-styles group-hover:mr-8 group opacity-30 hover:opacity-100 transition-all duration-500" onClick={handlePrev}>
             <GoArrowLeft />
             <div className="div-underline group-hover:opacity-100 group-hover:w-[100%]" />
@@ -53,7 +53,12 @@ const Portfolio: React.FC<props> = ({ data }) => {
       <div className='mt-8 md:mt-32 '>
         <Swiper
           spaceBetween={32}
-          style={{ paddingLeft: '64px', paddingTop: '32px', paddingBottom: '32px', paddingRight: '64px' }}
+          style={{
+            paddingLeft: window.innerWidth < 768 ? '40px' : '64px',
+            paddingTop: window.innerWidth < 768 ? '64px' : '32px',
+            paddingBottom: window.innerWidth < 768 ? '64px' : '32px',
+            paddingRight: window.innerWidth < 768 ? '40px' : '64px',
+          }}
           onSwiper={(swiper) => {
             swiperRef.current = swiper;
           }}

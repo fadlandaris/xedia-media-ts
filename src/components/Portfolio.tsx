@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import { dataProps } from '../types/type';
 import { HERO } from '../assets/assets';
+import { Link } from 'react-router-dom';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -50,37 +51,9 @@ const Portfolio: React.FC<props> = ({ data }) => {
         </div>
       </div>
 
-      <div className='mt-8 md:mt-32 '>
-        <Swiper
-          spaceBetween={32}
-          style={{
-            paddingLeft: window.innerWidth < 768 ? '40px' : '64px',
-            paddingTop: window.innerWidth < 768 ? '64px' : '32px',
-            paddingBottom: window.innerWidth < 768 ? '64px' : '32px',
-            paddingRight: window.innerWidth < 768 ? '40px' : '64px',
-          }}
-          onSwiper={(swiper) => {
-            swiperRef.current = swiper;
-          }}
-          modules={[Autoplay]}
-          autoplay={{
-            delay: 3000, 
-            disableOnInteraction: false, 
-          }}
-          loop={true} // Enable looping
-          breakpoints={{
-            // Define breakpoints for responsive behavior
-            640: {
-              slidesPerView: 1, // Mobile view
-            },
-            768: {
-              slidesPerView: 2, // Tablet view (optional)
-            },
-            1024: {
-              slidesPerView: 3, // Desktop view
-            },
-          }}
-        >
+      <div className='mt-8 md:mt-32'>
+        <Swiper spaceBetween={32} style={{ paddingLeft: window.innerWidth < 768 ? '40px' : '64px', paddingTop: window.innerWidth < 768 ? '64px' : '32px',paddingBottom: window.innerWidth < 768 ? '64px' : '32px',paddingRight: window.innerWidth < 768 ? '40px' : '64px',}}
+          onSwiper={(swiper) => { swiperRef.current = swiper; }} modules={[Autoplay]} autoplay={{ delay: 3000,  disableOnInteraction: false, }}loop={true} breakpoints={{ 640: {slidesPerView: 1, }, 768: { slidesPerView: 2, }, 1024: { slidesPerView: 3,},}}>
           {data.map((item, i) => (
             <SwiperSlide key={i}>
               <div className='relative hover:scale-105 transition-all duration-500 cursor-pointer h-[22rem]' style={{ backgroundImage: `url(${HERO})`, backgroundSize: 'cover', backgroundPosition: 'top', backgroundRepeat: 'no-repeat' }}>
@@ -92,11 +65,13 @@ const Portfolio: React.FC<props> = ({ data }) => {
                   </div>
                   <div className='h-[0.5px] w-full bg-white mt-16 md:mb-32 mb-8 opacity-30' />
                   <div className='flex justify-end font-extrabold'>
+                    <Link to={`/${item.link}`}>
                     <button className="button-styles group flex justify-start items-center gap-x-8 hover:gap-x-16 transition-all duration-500">
                       view Portfolio
                       <GoArrowDownRight />
                       <div className="div-underline group-hover:opacity-100 group-hover:w-[100%]" />
                     </button>
+                    </Link>
                   </div>
                 </div>
               </div>

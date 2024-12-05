@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export interface dataProps {
   id: number
   img?: string
@@ -7,9 +8,9 @@ export interface dataProps {
   link?: string
   source?: string
   date?: string
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   icon?: any
   price?: number
+  portfolio?: any
 }
 
 export interface newsProps {

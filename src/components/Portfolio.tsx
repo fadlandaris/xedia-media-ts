@@ -60,7 +60,7 @@ const Portfolio: React.FC<props> = ({ data }) => {
                 <div className='w-full h-full bg-black/100 blur-xl absolute inset-0 opacity-30' />
                 <div className='w-full h-full absolute inset-0 p-10'>
                   <div className='grid grid-cols-2'>
-                    <p className='text-2xl font-extrabold'>0{item.id}</p>
+                    <p className='text-2xl font-extrabold'>{String(i + 1).padStart(2, '0')}</p>
                     <p className='text-xl font-extrabold'>{item.title}</p>
                   </div>
                   <div className='h-[0.5px] w-full bg-white mt-16 md:mb-32 mb-8 opacity-30' />

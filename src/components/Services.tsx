@@ -10,7 +10,7 @@ interface props {
 const Services: React.FC<props> = ({ data }) => {
   return (
     <section className='py-16 md:pb-32 px-10 md:px-16 relative'>
-      <img src={D_2} alt="" className='absolute -bottom-72 z-10 w-96 right-0 animate-custom-bounce' />
+      <img src={D_2} alt="" className='absolute md:-bottom-72 -bottom-10 z-10 w-40 md:w-72 right-0 animate-custom-bounce' />
       <div className='absolute left-0 top-0 h-full w-full '>
         <img src={HERO_1} alt="" className='w-full h-full object-cover' />
       </div>
@@ -24,7 +24,7 @@ const Services: React.FC<props> = ({ data }) => {
       <img src={D_9} alt="" className='absolute top-[25rem] left-64 w-28 animate-custom-bounce' /> */}
       {/* </div> */}
       <div className='md:flex grid justify-between items-center relative z-10  ' id='services'>
-        <img src={D_1} alt="" className='absolute -top-80 left-16 w-96 rotate-180 animate-custom-bounce' />
+        <img src={D_1} alt="" className='absolute  -top-[0rem] md:-top-72 md:left-16 w-32 md:w-64 rotate-180 animate-custom-bounce' />
         <div className='text-3xl md:text-7xl font-extrabold w-[15rem] md:w-[40rem] mt-64 '>
           <h2 data-aos="fade-up" data-aos-duration="1500">Produk terbaik</h2>
           <div data-aos="fade-up" data-aos-duration="2100" className='flex justify-end'>
@@ -49,7 +49,7 @@ const Services: React.FC<props> = ({ data }) => {
                 <div className='h-[0.5px] w-full bg-white opacity-30' />
               </div>
               <div data-aos="fade-right" data-aos-duration="2000" className='grid md:flex justify-start md:gap-x-32 items-start my-16'>
-                <h2 className='text-xl font-extrabold'>0{item.id}</h2>
+                <p className='text-2xl font-extrabold'>{String(i + 1).padStart(2, '0')}</p>
                 <h2 className='text-2xl mt-4 my-8 md:mt-0 md:my-0 font-extrabold md:w-1/4'>{item.title}</h2>
                 <div className='md:w-1/3'>
                   <p>{item.desc}</p>
@@ -58,7 +58,8 @@ const Services: React.FC<props> = ({ data }) => {
                       {new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(item.price ?? 0)} 
                     </span>
                     <span className='font-extrabold text-2xl md:text-xl  md:ml-6  text-green-400'>
-                      {new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format((item.price ?? 0) * 0.7)}
+                      {/* <span className='text-green-400 text-[12px]'>start from  </span> */}
+                      {` ${new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format((item.price ?? 0) * 0.7)}`}
                     </span>
                   </div>
                 </div>

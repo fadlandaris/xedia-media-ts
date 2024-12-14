@@ -9,19 +9,19 @@ const Hero: React.FC = () => {
   return (
     <>
       <section className='relative h-screen overflow-hidden' id='about'>
-        <img src={D_3} alt="" className='absolute top-0 -right-12 z-10 w-96  animate-custom-bounce' />
-        <img src={HERO} alt="" className='absolute w-full ' />
+        <img src={D_3} alt="" className='absolute top-0 right-0 w-40 md:-right-12 z-10 md:w-96  animate-custom-bounce' />
+        <img src={HERO} alt="" className='absolute inset-0   ' />
         <div className='absolute inset-0 bg-gradient-to-b z-0 from-black/5 to-black flex justify-center items-center '>
           <div className=' max-w-2xl  relative z-10 '>
-            <img src={WHITE} data-aos="fade-up" data-aos-duration="1500" className='w-[100rem] mx-auto'/>
-            <div className='text-center ' data-aos="fade-up" data-aos-duration="2500">
-            <p className='text-xl font-extrabold mb-4'>Tentang Kami</p>
-            <p className='text-xl'>Kami membangun kepercayaan melalui transparansi dan kejujuran, terus berinovasi untuk mencapai hasil terbaik, dan meyakini bahwa kesuksesan klien adalah kesuksesan kami</p>  
+            <img src={WHITE} data-aos="fade-up" data-aos-duration="1500" className='md:w-[100rem] w-[20rem] mx-auto'/>
+            <div className='text-center px-10' data-aos="fade-up" data-aos-duration="2500">
+            <p className='md:text-xl text-sm font-extrabold mb-4 '>Tentang Kami</p>
+            <p className='md:text-xl text-sm'>Kami membangun kepercayaan melalui transparansi dan kejujuran, terus berinovasi untuk mencapai hasil terbaik, dan meyakini bahwa kesuksesan klien adalah kesuksesan kami</p>  
             </div>
           </div>
         </div>
         <div className='absolute inset-0 flex justify-center items-center bg-gradient-to-b from-black/50 to-none'>
-          <div className=' w-full '>
+          {/* <div className=' w-full '> */}
           {/* <di className='mb-16 grid grid-cols-1 md:grid-cols-5 px-10 md:px-16 border-2 '>
             <div data-aos="zoom-in-right" data-aos-duration="1500" className=' col-span-3 mb-4 md:mb-0 flex justify-start md:justify-center font-medium'>
               Siapa Kita ?
@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
             </a>
             </div>
           </di> */}
-          </div>
+          {/* </div> */}
         </div>
       </section>
       {/* <About/> */}

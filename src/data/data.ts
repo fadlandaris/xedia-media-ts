@@ -44,7 +44,7 @@ export const contact:dataProps[]= [
   },
   {
     id: 3,
-    nav: "Google Maps",
+    nav: "Jl. Pandan Biru III No.03 Blok C, Pandanaran Hills, Mangunharjo, Kec. Tembalang, Kota Semarang, Jawa Tengah 50272",
     link: "https://maps.app.goo.gl/6FQFcmU7e8h588Tq7"
   },
 ]
@@ -82,7 +82,7 @@ export const social:dataProps[] = [
   },
   {
     id: 6,
-    nav: "snack video",
+    nav: "snack",
     link: "https://www.snackvideo.com/@xediamedia?kpn=KWAI_BULLDOG&share_device_id=3D579FFC-9F4F-440F-B9D0-FF835EB3A4FE&share_item_type=profile&share_id=3D579FFC-9F4F-440F-B9D0-FF835EB3A4FE_1729314071517&language=en-ID&share_uid=150001647117076&fid=150001647117076&cc=COPY_LINK&timestamp=1729314071517&authorKwaiId=xediamedia&translateKey=share_profile_default_word&shareBucket=in&pwa_source=share&shareCountry=IDN&shareBiz=profile&share_item_info=%40xediamedia&ept=v2&short_key=vjdi1uqb&PWA_share_N_string=20&request_source=1001&share_redirect_switch_choice=pwa",
     icon: Hamburger,
   },
@@ -92,10 +92,10 @@ export const servicesData: dataProps[] = [
   {
     id: 1,
     title: "Video Content Production",
-    desc: "Menyajikan video kreatif yang mampu menghidupkan cerita dan pesan brand",
+    desc: "Membuat ide Konten untuk 12 Video, Tidak ada batasan durasi, Produksi dan editing oleh profesional videographer",
     link: "video-content-production",
     img: "",
-    price: 1000000,
+    price: 6428571,
     portfolio: [ 
       { thumbnail: VID_1 },
       { thumbnail: VID_2 },
@@ -122,9 +122,10 @@ export const servicesData: dataProps[] = [
   {
     id: 2,
     title: "Video Company Profile",
-    desc: "Menghasilkan video profil untuk merepresentasikan nilai dan kepribadian brand",
+    desc: "Director, Konsep Video, Take Video Camera Profesional & videographer, Drone & Profesional Drone Pilot, Voice Over, Brand Identity, Talent, Editing Profesional Editor",
     link: "video-company-profile",
     img: "",
+    price: 21428571,
     portfolio: [ 
       { thumbnail: VID_1 },
       { thumbnail: VID_2 },
@@ -151,9 +152,10 @@ export const servicesData: dataProps[] = [
   {
     id: 3,
     title: "Logo Design Services",
-    desc: "Menciptakan logo khas yang mencerminkan identitas unik sebuah brand",
+    desc: "logo Guidelines, Color Guidelines, Typography, Logo Application",
     link: "logo-design-services",
     img: "",
+    price: 7142857,
     portfolio: [ 
       { thumbnail: LOGO_1 },
       { thumbnail: LOGO_2},
@@ -180,10 +182,10 @@ export const servicesData: dataProps[] = [
   {
     id: 4,
     title: "Social Media Management",
-    desc: "Membangun strategi media sosial yang efektif untuk menjangkau lebih banyak audiens",
+    desc: "Upload Content, Copywriting, Story Sosmed dan Whatsapp setiap hari, Respon Kostumer Aktif di platform (Instagram, Youtube, Facebook, Twitter dan Snack Video), Menyajikan Monthly report dari project yang sudah selesai untuk bahan evaluasi",
     link: "social-media-management",
     img: "",
-    price: 1000000,
+    price: 2857142,
     portfolio: [ 
       { thumbnail: SOS_1 },
       { thumbnail: SOS_2 },
@@ -210,10 +212,10 @@ export const servicesData: dataProps[] = [
   {
     id: 5,
     title: "Website Development",
-    desc: "Merancang website yang responsif dan mendukung konversi pengunjung menjadi pelanggan",
+    desc: "Landing Page or Website Complex, Include Domain dan Hosting, Free 1 tahun maintenance",
     link: "website-development",
     img: "",
-    price: 1000000,
+    price: 5000000,
     portfolio: [ 
       { thumbnail: WEB_1 },
       { thumbnail: WEB_2 },
@@ -234,11 +236,11 @@ export const servicesData: dataProps[] = [
   },
   {
     id: 6,
-    title: "Instagram Feed Design",
-    desc: "Mengoptimalkan visual feed Instagram agar lebih menarik dan profesional",
+    title: " Feed Design",
+    desc: "Photography Product/Service oleh Profesional Photographer, Membuat 12 Feeds oleh profesional Designer ",
     link: "instagram-feed-design",
     img: "",
-    price: 1000000,
+    price: 5000000,
     portfolio: [ 
       { thumbnail: iF_1 },
       { thumbnail: iF_2},
@@ -261,9 +263,10 @@ export const servicesData: dataProps[] = [
   {
     id: 7,
     title: "Advertising Services",
-    desc: "Menawarkan iklan digital yang dirancang untuk memaksimalkan hasil kampanye",
+    desc: "Minimum Anggaran 1 juta, Consult target costumer dan report, Durasi mulai dari 3 hari, Iklan di platform Instagram, Tiktok, Youtube, Facebook, dan Snack Video",
     link: "advertising-services",
     img: "",
+    // price: 2000000,
     portfolio: [ 
       { thumbnail: SOS_1 },
       { thumbnail: SOS_2 },
@@ -290,9 +293,10 @@ export const servicesData: dataProps[] = [
   {
     id: 8,
     title: "Online Media Publication",
-    desc: "Menghubungkan brand dengan audiens melalui publikasi di platform digital",
+    desc: "Media Pemberitaan Lokal atau Nasional",
     link: "online-media-publication",
     img: "",
+    price: 714285,
     portfolio: [ 
       { thumbnail: iF_1 },
       { thumbnail: iF_2},
@@ -315,9 +319,10 @@ export const servicesData: dataProps[] = [
   {
     id: 9,
     title: "Digital Home Creation",
-    desc: "Membangun platform digital yang inovatif untuk meningkatkan eksistensi online",
+    desc: "Marketplace (Shoope, Tokopedia, Tiktok Shop), Akun Media Social (Instagram, Tiktok, Twitter, Facebook, Snack Video, Youtube)",
     link: "digital-home-creation",
     img: "",
+    price: 714285,
     portfolio: [ 
       { thumbnail: VID_1 },
       { thumbnail: VID_2 },
@@ -344,8 +349,9 @@ export const servicesData: dataProps[] = [
   {
     id: 10,
     title: "Marketing Administration",
-    desc: "Mengelola kebutuhan administrasi pemasaran untuk mendukung efisiensi operasional",
+    desc: "Aktif Respon pertanyaan yang masuk ke WA atau nomor Admin, Bertanggung Jawab mem-followup calon costumer yang berpotensi hingga dealing/closing",
     link: "marketing-administration",
+    price: 2142857,
     img: "",
     portfolio: [ 
       { thumbnail: SOS_1 },

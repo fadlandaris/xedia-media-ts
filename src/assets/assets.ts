@@ -1,5 +1,6 @@
 import HERO from "./hero.svg"
 import WHITE from "./white.png"
+import COLOR from './color.png'
 import HERO_1 from "./hero_1.png"
 import LOGO from "./logo.png"
 import CLIENT_2 from "./2.png";
@@ -17,6 +18,7 @@ import CLIENT_13 from "./13.png";
 
 export {
   WHITE,
+  COLOR,
   HERO,
   HERO_1,
   LOGO,

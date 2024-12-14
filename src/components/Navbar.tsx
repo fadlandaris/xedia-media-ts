@@ -45,7 +45,7 @@ const Navbar = () => {
   }, [navData]);
 
   return (
-    <nav className="px-10 flex justify-between right-0 left-0 py-4 md:px-16 items-center font-bold fixed z-30 text-[12px]   bg-gradient-to-b from-black/40 via-black/30 to-none backdrop-blur-3xl  ">
+    <nav className="px-10 flex justify-between right-0 left-0 py-4 md:px-16 items-center font-bold fixed top-0 z-50 text-[12px]   bg-gradient-to-b from-black/40 via-black/30 to-none backdrop-blur-3xl  ">
       <div className=" md:w-[7rem]">
         <img src={LOGO} alt="Logo" className="w-12" />
       </div>

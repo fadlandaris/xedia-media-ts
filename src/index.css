@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-black text-white font-manrope font-light text-[14px] tracking-wide pb-12
+  @apply bg-black text-white font-manrope font-light text-[14px] tracking-wide pb-12 pt-32 sm:pt-0
 }
 
 .button-styles {

@@ -1,4 +1,6 @@
-import HERO from "./hero.png"
+import HERO from "./hero.svg"
+import WHITE from "./white.png"
+import HERO_1 from "./hero_1.png"
 import LOGO from "./logo.png"
 import CLIENT_2 from "./2.png";
 import CLIENT_3 from "./3.png";
@@ -14,7 +16,9 @@ import CLIENT_12 from "./12.png";
 import CLIENT_13 from "./13.png";
 
 export {
+  WHITE,
   HERO,
+  HERO_1,
   LOGO,
   CLIENT_2,
   CLIENT_3,
@@ -36,6 +40,15 @@ import LOGO_2 from "./logo_2.jpg"
 import LOGO_3 from "./logo_3.png"
 import LOGO_4 from "./logo_4.jpg"
 import LOGO_5 from "./logo_5.png"
+import D_1 from "./asset_1.png";
+import D_2 from "./asset_2.png";
+import D_3 from "./asset_3.png";
+import D_4 from "./asset_4.png";
+import D_5 from "./asset_5.png";
+import D_6 from "./asset_6.png";
+import D_7 from "./asset_7.png";
+import D_8 from "./asset_8.png";
+import D_9 from "./asset_9.png";
 import VID_1 from "./vid_1.png";
 import VID_2 from "./vid_2.png";
 import VID_3 from "./vid_3.png";
@@ -75,6 +88,15 @@ export {
   LOGO_3,
   LOGO_4,
   LOGO_5,
+  D_1,
+  D_2,
+  D_3,
+  D_4,
+  D_5,
+  D_6,
+  D_7,
+  D_8,
+  D_9,
   VID_1,
   VID_2,
   VID_3,

@@ -1,6 +1,7 @@
 import React from 'react';
 import { dataProps } from '../types/type';
 import { GoArrowDownRight } from "react-icons/go";
+import { D_1, HERO_1, D_2} from '../assets/assets';
 
 interface props {
   data: dataProps[];
@@ -8,12 +9,26 @@ interface props {
 
 const Services: React.FC<props> = ({ data }) => {
   return (
-    <section className='py-16 md:py-32 px-10 md:px-16 relative'>
-      <div className='md:flex grid justify-between items-center relative z-10' id='services'>
-        <div className='text-3xl md:text-5xl font-extrabold w-[15rem] md:w-[25rem]'>
-          <h2 data-aos="fade-up" data-aos-duration="1500">Why Affiliates</h2>
+    <section className='py-16 md:pb-32 px-10 md:px-16 relative'>
+      <img src={D_2} alt="" className='absolute -bottom-72 z-10 w-96 right-0 animate-custom-bounce' />
+      <div className='absolute left-0 top-0 h-full w-full '>
+        <img src={HERO_1} alt="" className='w-full h-full object-cover' />
+      </div>
+      <div className='absolute inset-0 bg-gradient-to-b from-black via-black/70 to-black'/>
+      {/* <div data-aos="zoom-in"> */}
+      {/* <img src={D_1} alt="" className='absolute bottom-16 left-16 rotate-12 w-64 animate-custom-bounce' />
+      <img src={D_8} alt="" className='absolute top-1/3 right-16 w-40 animate-custom-bounce '/> */}
+      {/* <img src={D_6} alt="" className='absolute bottom-1/5 left-16 opacity-30 w-64 animate-custom-bounce' /> */}
+      {/* <img src={D_3} alt="" className='absolute top-[30rem] left-16 w-96 animate-custom-bounce' />
+      <img src={D_2} alt="" className='absolute bottom-1/4 left-1/2 z-10  w-32 rotate-45 ' />
+      <img src={D_9} alt="" className='absolute top-[25rem] left-64 w-28 animate-custom-bounce' /> */}
+      {/* </div> */}
+      <div className='md:flex grid justify-between items-center relative z-10  ' id='services'>
+        <img src={D_1} alt="" className='absolute -top-80 left-16 w-96 rotate-180 animate-custom-bounce' />
+        <div className='text-3xl md:text-7xl font-extrabold w-[15rem] md:w-[40rem] mt-64 '>
+          <h2 data-aos="fade-up" data-aos-duration="1500">Produk terbaik</h2>
           <div data-aos="fade-up" data-aos-duration="2100" className='flex justify-end'>
-            Choosen Us
+            Xedia Media
           </div>
         </div>
 
@@ -25,7 +40,7 @@ const Services: React.FC<props> = ({ data }) => {
         </div>
       </div>
 
-      <div className='mt-16 md:mt-32 grid grid-cols-1 md:grid-cols-4'>
+      <div className='mt-16 md:mt-16 grid grid-cols-1 md:grid-cols-4'>
         <div/>
         <div className='md:col-span-3'>
           {data.map((item, i) => (

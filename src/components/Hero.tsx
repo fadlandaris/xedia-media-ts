@@ -1,29 +1,40 @@
 import React from 'react'
-import Title from './Title'
-import { HERO } from '../assets/assets'
-import { GoArrowDownRight } from 'react-icons/go'
-import About from './About'
+// import Title from './Title'
+import { HERO, WHITE, D_3 } from '../assets/assets'
+// import { GoArrowDownRight } from 'react-icons/go'
+// import About from './About'
+// import { LOGO } from '../assets/assets'
 
 const Hero: React.FC = () => {
   return (
     <>
-      <section className='relative h-screen' id='about'>
-        <img src={HERO} alt="" className='absolute w-full h-[70rem] ' />
-        <div className='absolute inset-0 flex justify-center items-end bg-gradient-to-b from-black/50 to-none'>
+      <section className='relative h-screen overflow-hidden' id='about'>
+        <img src={D_3} alt="" className='absolute top-0 -right-12 z-10 w-96  animate-custom-bounce' />
+        <img src={HERO} alt="" className='absolute w-full ' />
+        <div className='absolute inset-0 bg-gradient-to-b z-0 from-black/5 to-black flex justify-center items-center '>
+          <div className=' max-w-2xl  relative z-10 '>
+            <img src={WHITE} data-aos="fade-up" data-aos-duration="1500" className='w-[100rem] mx-auto'/>
+            <div className='text-center ' data-aos="fade-up" data-aos-duration="2500">
+            <p className='text-xl font-extrabold mb-4'>Tentang Kami</p>
+            <p className='text-xl'>Kami membangun kepercayaan melalui transparansi dan kejujuran, terus berinovasi untuk mencapai hasil terbaik, dan meyakini bahwa kesuksesan klien adalah kesuksesan kami</p>  
+            </div>
+          </div>
+        </div>
+        <div className='absolute inset-0 flex justify-center items-center bg-gradient-to-b from-black/50 to-none'>
           <div className=' w-full '>
-          <div className='mb-16 grid grid-cols-1 md:grid-cols-5 px-10 md:px-16 '>
-            <div data-aos="zoom-in-right" data-aos-duration="1500" className='col-span-3 mb-4 md:mb-0 flex justify-start md:justify-center font-medium'>
+          {/* <di className='mb-16 grid grid-cols-1 md:grid-cols-5 px-10 md:px-16 border-2 '>
+            <div data-aos="zoom-in-right" data-aos-duration="1500" className=' col-span-3 mb-4 md:mb-0 flex justify-start md:justify-center font-medium'>
               Siapa Kita ?
             </div>
             <div data-aos="zoom-in" data-aos-duration="1800" className='bg-white h-[1px] md:w-1/4'/>
             <div data-aos="zoom-in-left" data-aos-duration="2100" className='font-medium '>
               <p>Xedia Media adalah agensi digital kreatif yang lahir di Semarang, berfokus pada solusi inovatif untuk membantu bisnis tumbuh dan terhubung dengan pelanggan secara efektif</p>
             </div>
-          </div>
-          <div className=''>
+          </di> */}
+          {/* <div className=''>
             <Title variant={'hero'}/>
-          </div>
-          <div className='px-10 pt-16 md:px-16 md:pt-16 md:pb-24 md:flex justify-between items-center'>
+          </div> */}
+          {/* <di className='border-2 px-10 pt-16 md:px-16 md:pt-16 md:pb-24 md:flex justify-between items-center'>
             <div className='grid grid-cols-1 w-[80%] md:w-1/3 text-3xl md:text-5xl font-extrabold '>
               <h2 data-aos="fade-up" data-aos-duration="1500">Transform Ideas</h2>
               <div data-aos="fade-up" data-aos-duration="1800" className=' flex justify-end'>
@@ -38,11 +49,11 @@ const Hero: React.FC = () => {
               <div className="div-underline group-hover:opacity-100 group-hover:w-[100%]"/>
             </a>
             </div>
-          </div>
+          </di> */}
           </div>
         </div>
       </section>
-      <About/>
+      {/* <About/> */}
     </>
    
   )

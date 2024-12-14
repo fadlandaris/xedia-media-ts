@@ -13,6 +13,20 @@ const config = {
       fontFamily: {
         manrope: ["Manrope", "sans-serif"],
       },
+      animation: {
+        'custom-bounce': 'custom-bounce 3s infinite',
+        'custom-bounce-x': 'custom-bounce-x 3s infinite',
+      },
+      keyframes: {
+        'custom-bounce': {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-20px)' },
+        },
+        'custom-bounce-x': {
+          '0%, 100%': { transform: 'translateX(0)' },
+          '50%': { transform: 'translateX(20px)' },
+        },
+      },
     },
     screens: {
       xs: "480px",
